@@ -43,6 +43,26 @@ export default buildConfig({
   admin: {
     livePreview: {
       url: 'https://payload-e-commerce-d674c62.payloadcms.app',
+      breakpoints: [
+        {
+          label: 'Mobile',
+          name: 'mobile',
+          width: 375,
+          height: 667,
+        },
+        {
+          label: 'Tablet',
+          name: 'tablet',
+          width: 768,
+          height: 1024,
+        },
+        {
+          label: 'Desktop',
+          name: 'desktop',
+          width: 1440,
+          height: 900,
+        },
+      ],
     },
     user: Users.slug,
     bundler: webpackBundler(), // bundler-config
