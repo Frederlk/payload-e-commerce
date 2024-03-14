@@ -41,6 +41,9 @@ dotenv.config({
 
 export default buildConfig({
   admin: {
+    livePreview: {
+      url: 'https://payload-e-commerce-d674c62.payloadcms.app',
+    },
     user: Users.slug,
     bundler: webpackBundler(), // bundler-config
     components: {
