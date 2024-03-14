@@ -15,27 +15,8 @@ export const Pages: CollectionConfig = {
   slug: 'pages',
   admin: {
     livePreview: {
-      url: 'https://payload-e-commerce-d674c62.payloadcms.app',
-      breakpoints: [
-        {
-          label: 'Mobile',
-          name: 'mobile',
-          width: 375,
-          height: 667,
-        },
-        {
-          label: 'Tablet',
-          name: 'tablet',
-          width: 768,
-          height: 1024,
-        },
-        {
-          label: 'Desktop',
-          name: 'desktop',
-          width: 1440,
-          height: 900,
-        },
-      ],
+      url: ({ data }) =>
+        `${process.env.PAYLOAD_PUBLIC_SERVER_URL}/${data.slug !== 'home' ? data.slug : ''}`,
     },
     useAsTitle: 'title',
     defaultColumns: ['title', 'slug', 'updatedAt'],

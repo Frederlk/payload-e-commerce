@@ -14,29 +14,6 @@ import { CustomerSelect } from './ui/CustomerSelect';
 const Users: CollectionConfig = {
   slug: 'users',
   admin: {
-    livePreview: {
-      url: 'http://localhost:3001',
-      breakpoints: [
-        {
-          label: 'Mobile',
-          name: 'mobile',
-          width: 375,
-          height: 667,
-        },
-        {
-          label: 'Tablet',
-          name: 'tablet',
-          width: 768,
-          height: 1024,
-        },
-        {
-          label: 'Desktop',
-          name: 'desktop',
-          width: 1440,
-          height: 900,
-        },
-      ],
-    },
     useAsTitle: 'name',
     defaultColumns: ['name', 'email'],
   },

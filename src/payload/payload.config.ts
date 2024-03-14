@@ -42,7 +42,6 @@ dotenv.config({
 export default buildConfig({
   admin: {
     livePreview: {
-      url: 'https://payload-e-commerce-d674c62.payloadcms.app',
       breakpoints: [
         {
           label: 'Mobile',
